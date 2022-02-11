@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="desktop/styles.css">
+
+    <title>SKYWEB</title>
+
+</head>
+<body>
+
+<header>
+    <div class="register">
+        <a href="#join">JOIN</a>
+        <a type="text">|</a>
+        <a href="#signin">SIGN IN </a>
+    </div>
+    <div class="topnav">
+        <img src="../icons/logo.jpg" alt="skyweb">
+        <a href="#shop">SHOP</a>
+        <a href="#learn">LEARN</a>
+        <a href="#fit">FIT</a>
+        <a href="#inspire">INSPIRE</a>
+        <a href="#connect" class="connect">CONNECT</a>
+        <a href="#cart"><img class="shop" src="../icons/cart.jpg" alt="cart"></a>
+    </div>
+    <div class="line-2"></div>
+</header>
+
+
+<div class="description">
+    <div class="product-image">
+        <img class="shirt"
+             src="https://www.deoveritas.com/media/catalog/product/cache/e1b0a0933e629a9e8313908c45c270e6/o/n/one-piece-collar-shirt1_3_1_1.jpg"
+             alt="shirt">
+    </div>
+    <div class="test">
+        <div class="product-name">
+            <ul>
+                <li>Palermo - White Twill 100s</li>
+                <li>Dress Shirt</li>
+                <li class="price">$90</li>
+            </ul>
+        </div>
+
+        <div class="advantages">
+            <ul>
+                <li><img src="../icons/fit.png" alt="img">GUARANTEED FIT</li>
+                <li><img src="../icons/scissors.jpg" alt="img">100% HAND CUT & SEWN</li>
+                <li><img src="../icons/box.jpg" alt="img">DELIVERY BETWEEN JAN 19 - JAN 22</li>
+            </ul>
+        </div>
+
+        <a class="cart" href="#add-to-cart"><b>ADD TO CART</b></a>
+
+        <ul class="buttons">
+            <li>
+                <button id="compost" class="collapsible" onclick="call1(); changeStyle1()"><b>ABOUT THIS BLEND</b> <i
+                        class="arrow down"></i>
+
+                </button>
+                <div id="first" class="line-1"></div>
+                <p id="call1"></p>
+            </li>
+
+
+            <li>
+                <button class="collapsible" onclick="changeStyle2()"><b>TASTING NOTES</b> <i class="arrow down"></i>
+                </button>
+                <div id="second" class="line-1"></div>
+            </li>
+            <li>
+                <button class="collapsible" onclick="call2(); changeStyle3()"><b>SHIPPING</b> <i class="arrow down"></i>
+
+                </button>
+                <div id="third" class="line-1"></div>
+            </li>
+            <p id="call2"></p>
+
+            <li>
+                <button class="collapsible" onclick="changeStyle4()"><b>COMPOST YOUR PACKAGING</b> <i
+                        class="arrow down"></i>
+                </button>
+                <div id="fourth" class="line-1"></div>
+            </li>
+
+
+        </ul>
+    </div>
+
+</div>
+
+<script>
+    function call1() {
+        document.getElementById("call1").innerHTML = "Indian Assam. Sri lanka Ceylon.We always buy the most recent harvest\n" +
+            "                here at Tea HQ for the freshest tea.it's got a 2 year shelf life\n" +
+            "                once it gets to you -but don't worry,you'll have drunk it by then.";
+
+
+    }
+
+    function call2() {
+        document.getElementById("call2").innerHTML = "Shipping is free over £15 (£3.95 below £15).Place your order before\n" +
+            "                3pm and we'll ship it that same day (Mon-Fri).It'll go First Class with\n" +
+            "                Royal Mail,Unless you need DPD Next Day which is £10.International is little different";
+    }
+
+</script>
+
+<script>
+    function changeStyle1() {
+        let element = document.getElementById("first");
+        element.style.backgroundColor = "#fea90b";
+    }
+
+    function changeStyle2() {
+        let element = document.getElementById("second");
+        element.style.backgroundColor = "#fea90b";
+    }
+
+    function changeStyle3() {
+        let element = document.getElementById("third");
+        element.style.backgroundColor = "#fea90b";
+    }
+
+    function changeStyle4() {
+        let element = document.getElementById("fourth");
+        element.style.backgroundColor = "#fea90b";
+    }
+</script>
+
+<script>
+    let coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: 'Questrial', sans-serif;
+}
+
+img {
+    max-width: 100%
+}
+.demo {
+    display: none
+}
+
+.logo {
+    font-size: 40px;
+}
+
+.register {
+    font-size: 13px;
+    background-color: black;
+    display: block;
+    color: white;
+    float: right;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.register a {
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+
+.topnav {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.topnav a.active {
+    color: black;
+}
+
+.connect {
+    margin-right: 630px;
+}
+
+.shirt {
+    width: 500px;
+    height: 500px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-image {
+    width: auto;
+    height: 100px;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.advantages {
+    margin-bottom: 50px;
+}
+
+.advantages li {
+    margin-bottom: 10px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.advantages img {
+    margin-right: 10px;
+}
+.price {
+    margin-top: 15px;
+}
+
+.shop {
+    float: right;
+
+}
+
+.cart {
+    background-color: #122f4f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 500px;
+}
+
+.description {
+    display: flex;
+}
+
+.product-image {
+    text-align: center;
+}
+
+.test {
+    display: inline-block;
+    text-align: left;
+    padding-left: 200px;
+}
+
+.product-name li {
+    padding-left: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-name {
+    font-size: 25px;
+    padding-bottom: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buttons {
+    width: 450px;
+    float: left;
+}
+
+.buttons button {
+    border: none;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    background-color: white;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    padding-right: 200px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: auto;
+    float: right;
+
+}
+
+.line-1 {
+    height: 2px;
+    background: gray;
+}
+
+.line-2 {
+    height: 1px;
+    background: gray;
+    margin-bottom: 50px;
+}
